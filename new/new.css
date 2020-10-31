@@ -1,0 +1,88 @@
+@charset "UTF-8";
+body{
+  text-align: center;
+  margin: 0;
+}
+.error{
+  margin: 2px;
+  color: crimson;
+}
+header{
+  height: 70px;
+  position: relative;
+}
+header h1{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 20px;
+}
+header button{
+  display: inline-block;
+  padding: 5px 7px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  border: 0.5px solid snow;
+  color: #fff;
+  position: absolute;
+  top: 18.5px;
+  right: 30px;
+}
+.main{
+  padding: 20px;
+  background-color: rgba(67, 122, 167, 0.233);
+  height: 100vh;
+}
+.title p{
+  margin: 8px;
+}
+.content{
+  margin: 30px auto;
+}
+.lab{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.content input{
+  width: 300px;
+  height: 28px;
+}
+.btn{
+  margin-top: 30px;
+  background-color: rgba(70, 131, 180, 0.7);
+  border: none;
+  border-radius: 5px;
+}
+.back_btn:hover,
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+.back_btn{
+  margin-top: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 28px;
+}
+#password-check{
+  margin-top: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+
+@media  screen and (max-width:550px){
+header h1{
+  font-size: 25px;
+}
+header button{
+  right: 10px;
+  padding: 3px 5px;
+  top: 22px;
+}
+
+
+
+}

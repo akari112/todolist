@@ -1,0 +1,400 @@
+@charset "UTF-8";
+body{ margin: 0; }
+a {
+  text-decoration: none;
+  color: black;
+}
+hr { margin: 0;}
+.fa-coins {
+  color: gold;
+}
+.error {
+  color: red;
+  margin: 3px;
+}
+/*         */
+/* ヘッダー */
+/*         */
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0px;
+}
+header a {
+  padding: 8px;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 10px;
+}
+.graph_icon{
+  padding: 4px 5px;
+}
+.fa-chart-line,
+.fa-sign-out-alt,
+.fa-exchange-alt{
+  padding: 2px;
+}
+header a:hover {
+  opacity: 0.4;
+}
+.points {
+  flex: 1;
+}
+.head_p {
+  width: 60px;
+  margin: 0 auto;
+  padding: 3px;
+  color: black;
+  border-radius: 5px;
+}
+.mini {
+  flex: 1;
+  margin: 0 auto;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.big {
+  flex: 1;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1{
+  flex: 1;
+  margin: 0 auto;
+}
+/*            */
+/* ヘッダーの下 */
+/*            */
+.ran {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+}
+.ran a {
+  flex: 1;
+  line-height: 50px;
+  background-color: rgba(100, 148, 237, 0.7);
+  color: #fff;
+}
+.ran a:hover{
+  background-color: cornflowerblue;
+}
+.ran .active{
+  background-color: cornflowerblue;
+}
+.addbtn {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.plusbtn {
+  background-color: #fff;
+  font-size: large;
+  border: 0;
+  border-radius: 50%;
+  background-color: dodgerblue;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  margin-left: 10px;
+}
+.plusbtn:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+.sort_form{
+  text-align: right;
+  margin-right: 110px;
+}
+.sort_btn{
+  font-size: 11px;
+  background-color: rgba(117, 163, 182, 0.562);
+  border: none;
+}
+.sort{
+  border: 0.3px solid gray;
+}
+/* リスト　*/
+.lists {
+  margin: 10px 100px;
+}
+.list{
+  padding: 8px 25px;
+}
+.list p{
+  display: inline-block;
+  margin: 5px auto;
+}
+.list a:hover{
+  opacity: 0.5;
+}
+.priority1 {
+ background-color: rgba(30, 143, 255, 0.3);
+}
+.priority2 {
+  background-color: rgba(30, 143, 255, 0.15);
+}
+.detail {
+  padding: 0 90px;
+}
+.detail p{
+  font-size: 14px;
+  margin: 5px 0 3px;
+}
+.check{
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 22px;
+  margin-right: 10px;
+}
+.title{
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 10px;
+}
+.edit{
+  margin-left: 12px;
+  margin-right: 3px;
+  font-size: 16px;
+}
+.trash{
+  font-size: 16px;
+  margin-right: 5px;
+}
+.point{
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 0px 3px;
+  font-size: 16px;
+}
+.openlists{
+  text-align: center;
+}
+.openlists:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.oklist p{
+  display: inline-block;
+  margin: 14px 5px 14px 0px;
+  font-weight: bold;
+}
+.oklist{
+  padding: 0px 25px;
+}
+.oklist a:hover{
+  opacity: 0.5;
+}
+.deadline{
+  display: inline-block;
+  margin: 2px 0 5px 90px;
+  background-color: white;
+  border: 0.3px solid rgba(84, 129, 146, 0.438);
+  font-size: 12.5px;
+  border-radius: 10px;
+  padding: 0 8px;
+}
+.deadline p{
+  margin: 0;
+}
+/* ご褒美画面 */
+.addreward{
+  margin: 15px auto;
+  text-align: center;
+}
+.addreward input{
+  height: 20px;
+}
+.addpoint {
+  width: 45px;
+}
+.addtitle {
+  width: 300px;
+}
+.nopoint {
+  text-align: center;
+}
+
+/* ログイン画面 */
+.login {
+  text-align: center;
+  background-color: rgba(135, 206, 250, 0.5);
+  height: 100vh;
+  padding-top: 90px;
+}
+.head {
+  margin-bottom: 30px;
+}
+.login h1{
+  margin: 0 0 20px 0;
+  padding: 20px auto;
+  font-size: 48px;
+  text-shadow: 4px 4px 3px #fff;
+}
+.login p{
+  margin: 10px;
+}
+.lab{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+.inp{
+  width: 300px;
+  height: 27px;
+}
+.back_btn{
+  margin-top: 5px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  height: 28px;
+}
+.b_btn{
+  margin-top: 10px;
+  background-color: #fff;
+  border: 2px solid  rgba(135, 206, 250, 0.5);
+  border-radius: 5px;
+  width: 300px;
+  height: 28px;
+}
+.b_btn:hover {
+  opacity: 0.8;
+  background-color:  rgba(135, 206, 250, 0.5);
+  cursor: pointer;
+}
+.btn{
+  width: 300px;
+  margin-top: 20px;
+  height: 28px;
+  background-color: rgba(70, 131, 180, 0.7);
+  border: none;
+  border-radius: 5px;
+}
+.back_btn:hover,
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* タスク追加画面 */
+.add,
+.edit{
+  text-align: center;
+}
+.add h1,
+.edit h1{
+  margin: 20px auto 10px;
+}
+.add p{
+  margin: 0;
+}
+.add_title,
+.edit_title{
+  width: 300px;
+  height: 25px;
+}
+.add_detail,
+.edit_detail{
+  width: 300px;
+  height: 100px;
+}
+.add_priority{
+  width: 100px;
+  height: 25px;
+}
+.edit_priority{
+  width: 150px;
+  height: 30px;
+}
+.add_deadline,
+.edit_deadline{
+  width: 200px;
+  height: 25px;
+}
+.add_point,
+.edit_point{
+  width: 100px;
+  height: 25px;
+}
+.main {
+  margin: 30px 80px;
+  text-align: center;
+}
+.cha {
+  margin: 30px 150px;
+  text-align: center;
+}
+.cha a {
+  text-decoration: underline;
+  color: blue;
+}
+.cha a:hover{
+  opacity: 0.6;
+}
+.cha_p {
+  margin: 100px auto;
+}
+.days {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+@media  screen and (max-width:630px){
+.mini {
+  display: flex;
+}
+.big {
+  display: none;
+}
+header h1{
+  font-size: 6vw;
+}
+header p{
+  font-size: 3vw;
+}
+.sort_form{
+  margin-right: 20px;
+}
+.lists{
+  margin: 10px;
+}
+.list p{
+  font-size: 15px;
+}
+.title{
+  font-size: 15px;
+}
+.deadline {
+  margin: 0 0 3px 90px;
+}
+.deadline p{
+  font-size: 12px;
+}
+.detail p{
+  font-size: 12.5px;
+}
+.oklist p{
+  font-size: 15px;
+}
+.addtitle {
+  width: 180px;
+}
+.main {
+  margin: 10px 25px;
+  text-align: center;
+}
+.days {
+  width: 100%;
+}
+.cha {
+  margin: 20px 25px;
+}
+}
