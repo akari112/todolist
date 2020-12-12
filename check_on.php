@@ -21,7 +21,7 @@ if($url === 'main.php'){
     $list_point = $list['point'];
 
     if($list['user'] === $id){
-      $stmt = $db->prepare('UPDATE lists SET achieve=1 WHERE id=?');
+      $stmt = $db->prepare('UPDATE lists SET achieve=1, achievementDate=NOW() WHERE id=?');
       $stmt->bindParam(1,$check_id,PDO::PARAM_INT);
       $stmt->execute();
       // ユーザー情報
