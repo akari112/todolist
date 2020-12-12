@@ -19,6 +19,7 @@ if($url === 'main.php'){
     $lists->execute(array($restore_id));
     $list = $lists->fetch();
     $restore_point = $list['point'];
+    $achievementDate = $list['achievementDate'];
 
     if($list['user'] === $id){
       $stmt = $db->prepare('UPDATE lists SET achieve=0 WHERE id=?');
@@ -38,9 +39,8 @@ if($url === 'main.php'){
       $points->execute();
 
       // グラフテーブルに追加
-      $today = date('Y-m-d');
       $graphs = $db->prepare('SELECT * FROM graph WHERE day=? AND user=?');
-      $graphs->execute(array($today,$id));
+      $graphs->execute(array($achievementDate,$id));
       $graph = $graphs->fetch();
       $graph_points = $graph['points'];
       // 1日のポイント数
@@ -48,7 +48,7 @@ if($url === 'main.php'){
       // ポイント減
       $day_points = $db->prepare('UPDATE graph SET points=? WHERE day=? AND user=?');
       $day_points->bindParam(1,$day_sum,PDO::PARAM_INT);
-      $day_points->bindParam(2,$today,PDO::PARAM_STR);
+      $day_points->bindParam(2,$achievementDate,PDO::PARAM_STR);
       $day_points->bindParam(3,$id,PDO::PARAM_INT);
       $day_points->execute();
     }
